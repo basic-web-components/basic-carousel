@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="../platform/platform.js"></script>
+<link rel="import" href="../basic-framed-content/basic-framed-content.html">
+<link rel="import" href="basic-carousel.html">
+
+<style>
+body,
+button,
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+basic-framed-content {
+  padding: 0.5em;
+}
+
+basic-carousel {
+  max-width: 100%;
+}
+
+img {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  basic-framed-content {
+    padding: 2em;
+  }
+}
+</style>
+
+</head>
+
+<!-- See basic-sequence project for image license attribution. -->
+
+<body unresolved>
+<basic-framed-content>
+<template is="auto-binding">
+  <p>
+    Effect:
+    <select value="{{effect}}">
+      <option value="">(None)</option>
+      <option value="cover">Cover</option>
+      <option value="crossfade">Crossfade</option>
+      <option value="reveal">Reveal</option>
+      <option value="slide">Slide</option>
+    </select>
+  </p>
+  <basic-carousel effect="{{effect}}">
+    <img src="../basic-sequence/images/image1.jpg">
+    <img src="../basic-sequence/images/image2.jpg">
+    <img src="../basic-sequence/images/image3.jpg">
+    <img src="../basic-sequence/images/image4.jpg">
+    <img src="../basic-sequence/images/image5.jpg">
+  </basic-carousel>
+</template>
+</basic-framed-content>
+</body>
+
+</html>
