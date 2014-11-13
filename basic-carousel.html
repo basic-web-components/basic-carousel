@@ -107,7 +107,7 @@ Polymer({
      */
     if ( getComputedStyle( this ).display === "none" ) {
       setTimeout( function() {
-        /* Browser didn't pick up "flex" -> we're on WebKit. */
+        /* Browser didn't pick up "inline-flex" -> we're on WebKit. */
         this.style.display = "-webkit-inline-flex";
         /* Seems we also need to give above change time to render. Ugh. */
         setTimeout( function() {
