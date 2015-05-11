@@ -1,16 +1,16 @@
 {
   "name": "basic-carousel",
   "description": "Lets user navigate previous/next through a sequence of child elements",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "license": "MIT",
   "main": "basic-carousel.html",
   "dependencies": {
-    "basic-sequence": "basic-web-components/basic-sequence#master",
-    "core-icons": "Polymer/core-icons#master",
-    "polymer": "Polymer/polymer#master"
+    "basic-sequence": "basic-web-components/basic-sequence#^0.5.0",
+    "core-icons": "Polymer/core-icons#^0.5.5",
+    "polymer": "Polymer/polymer#^0.5.5"
   },
   "devDependencies": {
-    "basic-framed-content": "basic-web-components/basic-framed-content#master"
+    "basic-framed-content": "basic-web-components/basic-framed-content#^0.5.0"
   },
   "keywords": [
     "basic-web-components",
